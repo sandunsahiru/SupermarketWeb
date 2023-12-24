@@ -7,42 +7,58 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <link rel=stylesheet href="styles.css">
-    <title>Login</title>
-    </head>
-    <body>
-        <div class="container">
-        <div class="Div-left">
-            <h4>Log In</h4>
-            <p>Shopped with us before?Log in with your details</p>
-
-            <p>New Member?</p>
-            <a href="signup.html" class="rbtn">Click Here to Register!</a>
-
-            <p>Have trouble logging in?
-                call us on 0112230125<br>
-                (Daily Operating Hours 8.00a.m
-                to 8.00p.m)
-            </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <p>Shopped with us before?<br>Login with your credentials.</p>
+        <div>
+            <p class="new-memb">New Member?</p>
+            <button type="submit" class="reg-btn">Click here to Register!</button>
         </div>
-        <div class="Div-right">
-            <form action="" method="post">
-                <label class="mail">Emil</label> <label class="passw">Password</label>
-                <br>
-                <input type="text" name="email" placeholder="Email" class="etxtinput"> <input type="text" name="pass"
-                    placeholder="Password" class="ptxtinput">
-                <br>
-                <input type="submit" value="LOGIN" class="sbtn">
-
-                <hr>
-                <p><u> Or Login With Your Mobile Number</u></p>
-                <label>Enter Your Mobile Number</label><br>
-                <input type="text" name="number" placeholder="SriLanka|07xxxxxxxx" class="number-input">
-                <input type="submit" value="VERIFY NUMBER" class="vbtn">
-            </form>
+        <div class="trouble">
+            <p>Have trouble logging in?<br>Call us on <a href="#">0112230125</a><br>(Daily Operating Hours 8.00 a.m<br>
+                to 8.00 p.m)</p>
         </div>
     </div>
- </body>
+    <div class="wrapper2">
+        <div class="sec-1">
+            <div class="input-box">
+                <h3>Email</h3>
+                <input type="text" placeholder="Email" required>
+                <div class="tip">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="infoP">New here? Sign up with your email/phone number to get started!</p>
+                </div>
+            </div>
+            <div class="input-box">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" required>
+                <i class="fa-regular fa-eye-slash"></i>
+                <div class="forg"><a href="#">Forgot Password?</a></div>
+            </div>
+        </div>
+        <button type="submit" class="log-btn">LOGIN</button>
+        <hr class="divider">
+        <div class="log-w-phone"><h3>Or login with your phone number</h3></div>
+
+        <div class="sec-2">
+            <div class="input-box">
+                <h3>Enter your Mobile Number</h3>
+                <input type="text" placeholder="Sri Lanka | 07XXXXXXXXX" required>
+            </div>
+            <div class="input-box">
+                <button type="submit" class="vrify-btn">VERIFY NUMBER</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
 </html>
+
