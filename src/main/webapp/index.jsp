@@ -33,7 +33,8 @@
             <label for="search-box" class="fas fa-search"></label>
         </form>
 
-        <div class="shopping-cart">
+        <!--Cart Drop Down Section ---------------------------------->
+        <!-- <div class="shopping-cart">
             <div class="box">
                 <i class="fas fa-trash"></i>
                 <img src="img/fruits/watermelon.jpeg" alt="" width="100" height="25">
@@ -66,7 +67,7 @@
 
             <div class="total">total: Rs. 960.00</div>
             <a href="#" class="btn">checkout</a>
-        </div>
+        </div> -->
     </header>
 
     <!-- Home Page ----------------------------------------------------------------------------->
