@@ -1,0 +1,229 @@
+<%-- 
+    Document   : PaymentFrom
+    Created on : Dec 26, 2023, 12:13:07 AM
+    Author     : acer
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>Online Payment-Page</title> 
+	<link rel="stylesheet" href="PaymentFrom.css"> 
+</head> 
+
+<body> 
+	<div class="container"> 
+
+		<form action="#"> 
+
+			<div class="row"> 
+
+				<div class="col"> 
+					<h3 class="title"> 
+						Billing Address 
+					</h3> 
+
+					<div class="inputBox"> 
+						<label for="name"> 
+							Full Name: 
+						</label> 
+						<input type="text" id="name"
+							placeholder="Enter your full name"
+							required> 
+					</div> 
+
+					<div class="inputBox"> 
+						<label for="email"> 
+							Email: 
+						</label> 
+						<input type="text" id="email"
+							placeholder="Enter email address"
+							required> 
+					</div> 
+
+					<div class="inputBox"> 
+						<label for="address"> 
+							Address: 
+						</label> 
+						<input type="text" id="address"
+							placeholder="Enter address"
+							required> 
+					</div> 
+					<div class="inputBox"> 
+						<label for="Shipping "> 
+							Shipping Address: 
+						</label> 
+						<input type="text" id="shipping"
+							placeholder="Enter Shipping address"
+							required> 
+					</div> 
+
+					<div class="inputBox"> 
+						<label for="city"> 
+							City: 
+						</label> 
+						<input type="text" id="city"
+							placeholder="Enter city"
+							required> 
+					</div> 
+
+					<div class="flex"> 
+
+						<div class="inputBox"> 
+							<label for="state"> 
+								State: 
+							</label> 
+							<input type="text" id="state"
+								placeholder="Enter state"
+								required> 
+						</div> 
+
+						<div class="inputBox"> 
+							<label for="zip"> 
+								Zip Code: 
+							</label> 
+							<input type="number" id="zip"
+								placeholder="123 456"
+								required> 
+						</div> 
+
+					</div> 
+
+				</div> 
+				<div class="col"> 
+					<h3 class="title">Payment</h3> 
+
+                    <section class="radio-section">
+                                                                              
+                        <div class="radio-list">
+                            <div class="radio-item">
+								<table>
+									<tr>
+										<td>
+											<input type="radio" name="radio" id="radio1">
+                                            <label for="radio1" >Paypal</label>
+										</td>
+										<td>
+											<img class="img.paypal" width="80px" height="50px" src="paypal.png" alt="">
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="radio-item">
+							     <table>
+									<tr>
+										<td>
+											<input type="radio" name="radio" id="radio2">
+									        <label for="radio2" >Debit/Credit</label>
+										</td>
+										<td>
+											<img class="img.credit" width="80px" height="50px" src="Credit-Card-Icons.jpg" alt="">
+										</td>
+									</tr>
+								 </table>
+							</div>
+								<div class="radio-item">
+									<table>
+									<tr>
+										<td>
+											<input type="radio" name="radio" id="radio3">
+									        <label for="radio3" >Cash</label>
+										</td>
+										<td>
+											<img class="img.paypal" width="80px" height="50px" src="cash on delivery.png" alt="">
+										</td>
+									</tr>
+									</table>
+								</div>
+                        </div>
+                    </section>
+
+					<div class="inputBox"> 
+						<label for="cardName"> 
+							Name On Card: 
+						</label> 
+						<input type="text" id="cardName"
+							placeholder="Enter card name"
+							required> 
+					</div> 
+
+					<div class="inputBox"> 
+						<label for="cardNum"> 
+							Credit Card Number: 
+						</label> 
+						<input type="text" id="cardNum"
+							placeholder="1111-2222-3333-4444"
+							maxlength="19" required> 
+					</div> 
+
+					<div class="inputBox"> 
+						<label for="">Exp Month:</label> 
+						<select name="" id=""> 
+							<option value="">Choose month</option> 
+							<option value="January">January</option> 
+							<option value="February">February</option> 
+							<option value="March">March</option> 
+							<option value="April">April</option> 
+							<option value="May">May</option> 
+							<option value="June">June</option> 
+							<option value="July">July</option> 
+							<option value="August">August</option> 
+							<option value="September">September</option> 
+							<option value="October">October</option> 
+							<option value="November">November</option> 
+							<option value="December">December</option> 
+						</select> 
+					</div> 
+
+
+					<div class="flex"> 
+						<div class="inputBox"> 
+							<label for="">Exp Year:</label> 
+							<select name="" id=""> 
+								<option value="">Choose Year</option> 
+								<option value="2023">2023</option> 
+								<option value="2024">2024</option> 
+								<option value="2025">2025</option> 
+								<option value="2026">2026</option> 
+								<option value="2027">2027</option> 
+							</select> 
+						</div> 
+
+						<div class="inputBox"> 
+							<label for="cvv">CVV</label> 
+							<input type="number" id="cvv"
+								placeholder="1234" required> 
+						</div> 
+					</div> 
+
+				</div> 
+
+			</div> 
+          <table class="total">
+			<tr>
+				<td class="gap">
+					<input type="submit" value="Proceed to Pay"
+					class="submit_btn"> 
+				</td>
+				<td class="gap">
+					<label class="total-price">Total Price :</label>
+				</td>
+				<td>
+					<label class="total-price">Rs.500</label>
+				</td>
+
+			</tr>
+		  </table>
+	</form> 
+
+	</div> 
+	<script type="text/javascript" src="PaymentFrome.js"></script> 
+</body> 
+
+</html>
+
