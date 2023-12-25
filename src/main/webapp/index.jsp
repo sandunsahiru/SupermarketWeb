@@ -235,7 +235,7 @@
             </div>
         </section>
     </footer>
-    <script src="home.js"></script>
+    <script src="C:\Users\SINGER\OneDrive - NSBM\Desktop\Website\bug - Copy\js\home.js"></script>
 </body>
 
 </html>
