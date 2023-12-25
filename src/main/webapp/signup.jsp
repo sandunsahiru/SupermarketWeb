@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="wrapper2">
-        <div class="sec-1">
+        <div class="reg-sec-1">
             <div class="input-box">
                 <h3>Enter Your Mobile Number</h3>
                 <input class="regnumb" type="text" placeholder="Sri Lanka | 07XXXXXXXXX" required>
@@ -38,11 +38,11 @@
                 </div>
             </div>
             <div class="input-box">
-                <button type="submit" class="vrify-btn">VERIFY NUMBER</button>
+                <button type="submit" class="reg-vrify-btn">VERIFY NUMBER</button>
             </div>
         </div>
         <hr class="divider">
-        <div class="sec-2">
+        <div class="reg-sec-2">
             <div class="input-box2">
                 <h3>Enter Verification Code</h3>
                 <input class="otp" type="text" placeholder="Verification Code" required>
