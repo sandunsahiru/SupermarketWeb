@@ -131,6 +131,6 @@
 </footer>
 
 
-  <script src="app.js"></script>
+  <script src="AllProduct.js"></script>
 </body>
 </html>
