@@ -52,6 +52,6 @@
             </div>
         </div>
     </div>
-    <script src="js/register.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 </html>
