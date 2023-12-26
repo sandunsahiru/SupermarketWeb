@@ -12,19 +12,19 @@
 <body>
     <!-- Header ----------------------------------------------------------------------------->
     <header class="header">
-        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> Greenie</a>
+        <a href="home-page.html" class="logo"><i class="fas fa-shopping-basket"></i> Greenie</a>
 
         <nav class="navbar">
-            <a href="#home">home</a>
+            <a href="home-page.html">home</a>
             <a href="#bestsellers">best sellers</a>
-            <a href="#products">products</a>
+            <a href="products-page.html">products</a>
             <a href="#categories">categories</a>
         </nav>
 
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-icon"></div>
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
@@ -32,42 +32,6 @@
             <input type="search" id="search-box" placeholder=" search here...">
             <label for="search-box" class="fas fa-search"></label>
         </form>
-
-        <!--Cart Drop Down Section ---------------------------------->
-        <!-- <div class="shopping-cart">
-            <div class="box">
-                <i class="fas fa-trash"></i>
-                <img src="img/fruits/watermelon.jpeg" alt="" width="100" height="25">
-                <div class="content">
-                    <h3>watermelon</h3>
-                    <span class="price">Rs. 420.00</span><br>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-trash"></i>
-                <img src="img/fruits/papaya.jpeg" alt="" width="100" height="25">
-                <div class="content">
-                    <h3>Papaya</h3>
-                    <span class="price">Rs. 170.00</span><br>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-
-            <div class="box">
-                <i class="fas fa-trash"></i>
-                <img src="img/fruits/Bananas.jpeg" alt="" width="100" height="25">
-                <div class="content">
-                    <h3>Banana</h3>
-                    <span class="price">Rs. 370.00</span><br>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-
-            <div class="total">total: Rs. 960.00</div>
-            <a href="#" class="btn">checkout</a>
-        </div> -->
     </header>
 
     <!-- Home Page ----------------------------------------------------------------------------->
@@ -90,7 +54,7 @@
         <div class="content-overlay">
             <h3>Nourish Your <span>Lifestyle</span> with Freshness!</h3>
             <p>Elevate your lifestyle with our handpicked selection of fresh and organic products.</p>
-            <a href="#" class="btn">shop now</a>
+            <a href="products-page.html" class="btn">shop now</a>
         </div>
     </section>
 
@@ -132,7 +96,7 @@
 
             <div class="box">
                 <img src="img/best-sellers-and-bakery-category/Tomato_je.jpg" alt="" width="250" height="200">
-                <h2>Tomato 500g</h2>
+                <h2>Tomatoes 500g</h2>
                 <h2>rs. 410.00</h2>
                 <button class="btn3">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
             </div>
@@ -181,6 +145,12 @@
             <div class="box">
                 <img src="img/Categories/bread.jpg" alt="" width="250" height="200">
                 <h2>bakery</h2>
+                <a href="#" class="btn2">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="img/Categories/grocery.jpg" alt="" width="250" height="200">
+                <h2>grocery</h2>
                 <a href="#" class="btn2">shop now</a>
             </div>
         </div>
@@ -236,7 +206,7 @@
             </div>
         </section>
     </footer>
-    <script src="C:\Users\SINGER\OneDrive - NSBM\Desktop\Website\bug - Copy\js\home.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
