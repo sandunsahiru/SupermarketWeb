@@ -1,15 +1,7 @@
 let searchForm = document.querySelector('.search-form');
-
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
 }
-
-// Cart Drop Down Animation --------------------------------->
-// let shoppingCart=document.querySelector('.shopping-cart');
-
-// document.querySelector('#cart-btn').onclick = () =>{
-//     shoppingCart.classList.toggle('active');
-// }
 
 document.addEventListener("DOMContentLoaded", function () {
     var loginBtn = document.getElementById("login-btn");
@@ -35,7 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     setInterval(showNextSlide, 5000);
 });
-
-
-
 
