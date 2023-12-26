@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (registerBtn) {
         registerBtn.addEventListener("click", function () {
-            window.location.href = "register-page.html";
+            window.location.href = "signup.html";
         });
     }
 });
