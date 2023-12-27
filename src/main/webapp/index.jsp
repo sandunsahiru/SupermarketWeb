@@ -96,7 +96,7 @@
 
             <div class="box">
                 <img src="img/best-sellers-and-bakery-category/Tomato_je.jpg" alt="" width="250" height="200">
-                <h2>Tomatoes 500g</h2>
+                <h2>Tomato 500g</h2>
                 <h2>rs. 410.00</h2>
                 <button class="btn3">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
             </div>
@@ -156,6 +156,126 @@
         </div>
     </section>
 
+    <!-- Feedbacks ----------------------------------------------------------------------------->
+    <section class="feedbacks" id="feedbacks">
+        <h1 class="cust-fed-head">Customer<span>Feedbacks</span></h1>
+        <div class="feed-container">
+
+            <!-- first feed ----------------------------------------------->
+            <div class="f-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="img/profile-img.png">
+                        </div>
+                        <div class="name-user">
+                            <strong>Samantha Deshapriya</strong>
+                            <span>samanthadesh@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <!-- empty star -->
+                    </div>
+                </div>
+                <div class="feed-comment">
+                    <p>Wow its one of marvellous Greenie outlet in kandy city. It provides self service snack counter.
+                        And juice bar. Good service and friendly environment. Plenty of parking available here. It's
+                        close by to many valuable places around dangolla junction. Thank you for your amazing service.
+                    </p>
+                </div>
+            </div>
+
+            <!-- second feed ----------------------------------------------->
+            <div class="f-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="img/profile-img.png">
+                        </div>
+                        <div class="name-user">
+                            <strong>Senarath Dunusinghe</strong>
+                            <span>senedunu@outlook.com</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="feed-comment">
+                    <p>A stop for almost all my grocery needs, I love this place because its convenient, clean and
+                        attentive.
+                        I must mention that most of the staff members are very young, but have a wonderful attitude and
+                        are willing to do their job well.
+                    </p>
+                </div>
+            </div>
+
+            <!-- third feed ----------------------------------------------->
+            <div class="f-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="img/profile-img.png">
+                        </div>
+                        <div class="name-user">
+                            <strong>Mahipala Hatharasinghe</strong>
+                            <span>mahathr@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <!-- empty star -->
+                        <i class="fa-regular fa-star"></i> <!-- empty star -->
+                    </div>
+                </div>
+                <div class="feed-comment">
+                    <p>Greenie Supermarket impresses with its ample parking space, making shopping hassle-free. Greenie
+                        Supermarket not only offers a variety of products but also values convenience and ease for its
+                        shoppers, making it a go-to destination for almost all your shopping requirements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- fourth feed ----------------------------------------------->
+            <div class="f-box">
+                <div class="box-top">
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="img/profile-img.png">
+                        </div>
+                        <div class="name-user">
+                            <strong>Nihal Kariyawasam</strong>
+                            <span>ni.ka@yahoo.com</span>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <!-- empty star -->
+                        <i class="fa-regular fa-star"></i> <!-- empty star -->
+                        <i class="fa-regular fa-star"></i> <!-- empty star -->
+                    </div>
+                </div>
+                <div class="feed-comment">
+                    <p>Clean and organized but the only problem is the staff working aren?t that pleasant, some are fine
+                        but some make us really disappointed and unhappy.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Footer ----------------------------------------------------------------------------->
     <footer>
         <section class="footer" id="foot">
@@ -181,12 +301,12 @@
                 <div class="col22">
                     <h3>Links</h3>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Best Sellers</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Categories</a></li>
+                        <li><a href="home-page.html">Home</a></li>
+                        <li><a href="home-page.html#bestsellers">Best Sellers</a></li>
+                        <li><a href="products-page.html">Products</a></li>
+                        <li><a href="home-page.html#categories">Categories</a></li>
                         <li><a href="">Contact Us</a></li>
-                        <li><a href="">My Account</a></li>
+                        <li><a href="login-page.html">My Account</a></li>
                     </ul>
                 </div>
                 <div class="col22">
