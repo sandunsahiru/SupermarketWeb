@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('img/slider/img11.jpg');
+}
+
+p {
+    text-align: start;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.trouble p {
+    margin-top: 35px;
+    font-size: 16.5px;
+    line-height: 1.5;
+    margin-bottom: -60px;
+}
+
+.tip {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 3px;
+}
+
+.infoP {
+    font-size: 14px;
+    margin-top: -9px;
+    margin-left: 10px;
+    color: #4d9f41;
+    font-weight: 700;
+}
+
+.trouble p a {
+    color: #4d9f41;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.new-memb {
+    font-weight: 500;
+}
+
+.wrapper {
+    height: 525px;
+    width: 380px;
+    background: rgb(34, 34, 34);
+    color: white;
+    padding: 100px 45px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.wrapper h1 {
+    font-size: 35px;
+    text-align: start;
+    color: #60c051;
+}
+
+.wrapper2 {
+    text-align: center;
+    height: 525px;
+    width: 750px;
+    background: rgba(255, 255, 255, 0.774);
+    color: white;
+    padding: 15px 45px 0px 70px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -15px;
+    gap: 25px;
+}
+
+.sec-1,
+.sec-2 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: -10px;
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+.wrapper2 h3 {
+    text-align: start;
+    font-size: 16px;
+    color: rgb(39, 39, 39);
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+.wrapper2 .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.fee-box {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.rating {
+    display: flex;
+    margin-top: 20px;
+    grid-gap: .5rem;
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.rating .star{
+    cursor: pointer;
+}
+.rating .star:hover{
+    transform: scale(1.2);
+}
+textarea[name="feed-comment"] {
+    width: 200%;
+    background: #b7bcb1;
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-top: -10px;
+}
+
+textarea[name="feed-comment"]::placeholder {
+    color: #ffffff;
+}
+
+.btn-group {
+    display: flex;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.feedsub {
+    padding: 12px;
+    width: 6rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 15px;
+    background: #60c051;
+    color: white;
+    font-weight: 700;
+}
+
+.feedsub:hover {
+    background: #222222;
+}
+
+.feedcanc:hover {
+    background: #22222210;
+    color: white;
+}
+
+.feedcanc {
+    padding: 12px;
+    width: 6rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 15px;
+    background: transparent;
+    color: #3c9e2d;
+    font-weight: 700;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgba(153, 153, 153, 0.541);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(44, 44, 44);
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.forg {
+    margin-top: 10px;
+    text-align: end;
+}
+
+.forg a {
+    color: #3c9e2d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14.5px;
+}
+
+.forg a:hover {
+    text-decoration: underline;
+}
+
+.log-w-phone {
+    text-align: start;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.log-w-phone h3 {
+    color: #52a844;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: -5px;
+}
+
+.log-w-phone h3:hover {
+    text-decoration: underline;
+}
+
+.input-box i {
+    font-size: 20px;
+    color: 4d9f41;
+}
+
+.reg-btn {
+    width: 85%;
+    height: 50px;
+    background: #4d9f41;
+    border: none;
+    outline: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-left: -2.8rem;
+}
+
+.log-btn {
+    width: 40rem;
+    height: 40px;
+    background: #4d9f41;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.vrify-btn {
+    width: 55%;
+    height: 50px;
+    background: #4d9f41;
+    border: none;
+    outline: none;
+    border-radius: 30px 10px 30px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16rem;
+}
+
+.vrify-btn:hover,
+.log-btn:hover {
+    background: #222222;
+}
+
+.reg-btn:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+hr {
+    margin: 2.5rem 0;
+    height: 2px;
+    border: none;
+    background-color: #33333379;
+    margin-left: -10px;
+    margin-bottom: 3.7rem;
+}
+
+.reviews {
+    color: rgb(233, 233, 0);
+    font-size: 15px;
+    margin-top: 20px;
+}
