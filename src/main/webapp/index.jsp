@@ -25,7 +25,7 @@
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-icon"></div>
-            <div class="fas fa-user" id="login-btn"></div>
+            <a href="login.jsp"><div class="fas fa-user" id="login-btn"></div></a>
         </div>
 
         <form action="" class="search-form">
