@@ -20,7 +20,7 @@
         <p>Shopped with us before?<br>Login with your credentials.</p>
         <div>
             <p class="new-memb">New Member?</p>
-            <button type="submit" class="reg-btn">Click here to Register!</button>
+            <a href="signup.jsp"><button type="submit" class="reg-btn">Click here to Register!</button></a>
         </div>
         <div class="trouble">
             <p>Have trouble logging in?<br>Call us on <a href="#">0112230125</a><br>(Daily Operating Hours 8.00 a.m<br>
