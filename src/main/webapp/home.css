@@ -223,6 +223,27 @@ section {
 .header .i {
     color: var(--green);
 }
+/* drop-down-menu */
+.header .icons{
+    position: relative;
+}
+.drop-down{
+    text-align: center;
+    display: none;
+    color: white;
+    width: 100%;
+    position: absolute;
+    background-color: #000000;
+    font-size: 1.2rem;
+   
+}
+#login-btn:hover .drop-down{
+    display: block;
+    z-index: 999999;
+}
+.drop-down li:hover{
+    background-color: #3abc47;
+    color: white;
 
 .header .navbar a {
     font-size: 1.7rem;
