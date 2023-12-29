@@ -33,7 +33,7 @@
                 <div class="reg-sec-1">
                     <div class="input-box">
                         <h3>Enter Your Email Address</h3>
-                        <input class="regnumb" type="text" placeholder="Sri Lanka | 07XXXXXXXXX" required>
+                        <input class="regnumb" type="text" placeholder="Email" required>
                         <div class="tip">
                             <i class="fa-solid fa-circle-info"></i>
                             <p class="infoOTP">You will receive an OTP code to the mentioned email address.</p>
