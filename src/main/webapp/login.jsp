@@ -27,11 +27,12 @@
                 to 8.00 p.m)</p>
         </div>
     </div>
+    <form action="LoginServlet" method="post">
     <div class="wrapper2">
         <div class="sec-1">
             <div class="input-box">
                 <h3>Email</h3>
-                <input type="text" placeholder="Email" required>
+                <input type="text" name="email" placeholder="Email" required>
                 <div class="tip">
                     <i class="fa-solid fa-circle-info"></i>
                     <p class="infoP">New here? Sign up with your email/phone number to get started!</p>
@@ -39,25 +40,15 @@
             </div>
             <div class="input-box">
                 <h3>Password</h3>
-                <input type="password" placeholder="Password" required>
-                <i class="fa-regular fa-eye-slash"></i>
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-regular"></i>
                 <div class="forg"><a href="#">Forgot Password?</a></div>
             </div>
         </div>
         <button type="submit" class="log-btn">LOGIN</button>
-        <hr class="divider">
-        <div class="log-w-phone"><h3>Or login with your phone number</h3></div>
-
-        <div class="sec-2">
-            <div class="input-box">
-                <h3>Enter your Mobile Number</h3>
-                <input type="text" placeholder="Sri Lanka | 07XXXXXXXXX" required>
-            </div>
-            <div class="input-box">
-                <button type="submit" class="vrify-btn">VERIFY NUMBER</button>
-            </div>
-        </div>
     </div>
+        </form>
+        
     <script src="js/login.js"></script>
 </body>
 </html>
