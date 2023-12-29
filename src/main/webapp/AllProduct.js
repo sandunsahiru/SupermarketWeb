@@ -2,7 +2,6 @@ const btnCart=document.querySelector('#cart-icon');
 const cart=document.querySelector('.cart');
 const btnClose=document.querySelector('#cart-close');
 
-
 var items = [
   { name: 'Corn Cob 2Pcs', category: 'Vegetabales', price: 'Rs.180', imgSrc: 'images/image14.jpg' },
   { name: 'Tomato 500g', category: 'Vegetabales', price: 'Rs.410', imgSrc: 'images/image17.jpg' },
