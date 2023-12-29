@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <a href="home-page.html">home</a>
                 <a href="#bestsellers">best sellers</a>
-                <a href="products-page.html">products</a>
+                <a href="AllProduct.jsp">products</a>
                 <a href="#categories">categories</a>
             </nav>
 
@@ -32,7 +32,7 @@
                 <!-- User is logged in -->
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown button
+                        Log
                     </button>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
