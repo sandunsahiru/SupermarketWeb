@@ -30,7 +30,7 @@ p {
     font-size: 18px;
 }
 
-trouble p {
+.trouble p {
     margin-top: 35px;
     font-size: 16.5px;
     line-height: 1.5;
@@ -85,6 +85,7 @@ trouble p {
     border-bottom-right-radius: 15px;
     margin-left: -15px;
     gap: 25px;
+    position: relative;
 }
 
 .wrapper2 h3 {
@@ -136,7 +137,7 @@ hr {
     border: none;
     background-color: #33333379;
     margin-left: -10px;
-    margin-bottom: 3.7rem;
+    margin-bottom: 0;
 }
 
 .infoP {
@@ -159,11 +160,14 @@ hr {
 .sec-1,
 .sec-2 {
     display: flex;
-    margin-top: 10px;
+    margin-top: -100x;
     margin-left: -10px;
     gap: 25px;
-    margin-bottom: 70px;
+
 }
+
+
+
 
 .input-box input {
     width: 100%;
@@ -179,7 +183,7 @@ hr {
 }
 
 .forg {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: end;
 }
 
@@ -244,19 +248,37 @@ hr {
     margin-left: -10px;
 }
 
+.reg-vrify-btn {
+    width: 40rem;
+    height: 40px;
+    background: #4d9f41;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: -10px;
+
+
+
+}
+
 .vrify-btn {
     width: 55%;
     height: 50px;
     background: #4d9f41;
     border: none;
     outline: none;
-    border-radius: 30px 10px 30px 10px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
     color: white;
     font-weight: 800;
-    margin-top: 30px;
-    margin-left: -16rem;
+    margin-top: 10px;
+    margin-left: -10rem;
 }
 
 .alrdy-reg {
@@ -268,12 +290,12 @@ hr {
     margin-top: 10px;
     margin-left: -10px;
     gap: 25px;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 .reg-sec-2 {
     display: flex;
-    margin-top: -50px;
+    margin-top: -70px;
     margin-left: -10px;
     gap: 25px;
 }
@@ -285,7 +307,7 @@ hr {
 }
 
 .input-box .regnumb {
-    width: 130%;
+    width: 100%;
     height: 100%;
     background: rgba(153, 153, 153, 0.541);
     border: none;
@@ -311,20 +333,7 @@ hr {
     margin-left: -7.8rem;
 }
 
-.reg-vrify-btn {
-    width: 55%;
-    height: 50px;
-    background: #4d9f41;
-    border: none;
-    outline: none;
-    border-radius: 30px 10px 30px 10px;
-    cursor: pointer;
-    font-size: 15px;
-    color: white;
-    font-weight: 800;
-    margin-top: 30px;
-    margin-left: -6rem;
-}
+
 
 .submt-btn {
     width: 55%;
