@@ -30,20 +30,15 @@
                 <div class="fas fa-shopping-cart" id="cart-icon"></div>
                 <% if (userEmail != null) {%>
                 <!-- User is logged in -->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Log
-                    </button>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <ul class="drop-down">
-                            <li><a class="dropdown-item" href="#">My Account</a></li>
-                            <li><a class="dropdown-item" href="#">Orders</a></li>
-                            <li><a class="dropdown-item" href="#">Addresses</a><li>
-                            <li><a class="dropdown-item" href="#">Logout</a><li>
-                        </ul>
-                    </div>
+                <a href="login.jsp"></a>
+                <div class="fas fa-user" id="login-btn"></div>
+                <div class="dropdown-content">
+                    <a href="#">My Account</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Address</a>
+                    <a href="#">Logout</a>
                 </div>
+                 
 
                 <!--<div class="dropdown">
                     <button class="dropbtn">Welcome, <%= userEmail%></button>
