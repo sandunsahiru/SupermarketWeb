@@ -36,10 +36,12 @@
                     </button>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">My Account</a>
-                        <a class="dropdown-item" href="#">Orders</a>
-                        <a class="dropdown-item" href="#">Addresses</a>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <ul class="drop-down">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Orders</a></li>
+                            <li><a class="dropdown-item" href="#">Addresses</a><li>
+                            <li><a class="dropdown-item" href="#">Logout</a><li>
+                        </ul>
                     </div>
                 </div>
 
