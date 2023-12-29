@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
         try {
             // Database connection setup
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sandun?serverTimezone=UTC", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC", "root", "");
 
             // SQL query
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM users WHERE email = ? AND password = ?");
@@ -25,9 +25,10 @@ public class LoginServlet extends HttpServlet {
             if (resultSet.next()) {
                 // User exists and login is successful
                 HttpSession session = request.getSession();
-                session.setAttribute("user", email);
-                // Redirect to a success page
-                response.sendRedirect("PaymentFrom.jsp");
+                session.setAttribute("userEmail", email); // Store user email in session
+                // Optionally, store more user information in the session as needed
+
+                response.sendRedirect("index.jsp"); // Redirect to home page
             } else {
                 // User does not exist or wrong password
                 response.sendRedirect("login.jsp?error=1");
