@@ -128,7 +128,7 @@ hr {
     border: none;
     background-color: #33333379;
     margin-left: -10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .infoP {
@@ -141,7 +141,7 @@ hr {
 
 .input-box i {
     font-size: 20px;
-    color: 4d9f41;
+    color: #4d9f41;
 }
 
 .new-memb {
@@ -210,7 +210,7 @@ hr {
 
 .input-box i {
     font-size: 20px;
-    color: 4d9f41;
+    color: #4d9f41;
 }
 
 .fa-regular {
