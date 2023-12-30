@@ -28,8 +28,8 @@
                     to 8.00 p.m)</p>
             </div>
         </div>
-        div class="wrapper2">
-        <form action="SendOTPServlet" method="post">
+        <div class="wrapper2">
+         <form action="SendOTPServlet" method="post">
             <div class="reg-sec-1">
                 <div class="input-box">
                     <h3>Enter Your Email Address</h3>
@@ -52,7 +52,7 @@
             </div>
             <button type="submit" class="reg-vrify-btn">VERIFY EMAIL</button>
         
-            </form>
+             </form>
             <hr class="divider">
             <%
         String otpError = (String) session.getAttribute("otpError");
@@ -60,9 +60,9 @@
     %>
 
     <% if (otpError != null) { %>
-        <div class="alert alert-danger" role="alert">
+         <div class="alert alert-danger" role="alert">
             <%= otpError %>
-        </div>
+         </div>
     <% } %>
             <form action="VerifyOTPServlet" method="post">
                 <div class="reg-sec-2">
@@ -76,6 +76,7 @@
                 </div>
             </form>
         </div>
+    
         <script src="js/signup.js"></script>
     </body>
 </html>

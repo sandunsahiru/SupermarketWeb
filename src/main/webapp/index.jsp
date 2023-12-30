@@ -29,16 +29,17 @@
                 <div class="fas fa-search" id="search-btn"></div>
                 <div class="fas fa-shopping-cart" id="cart-icon"></div>
                 <% if (userEmail != null) {%>
-                <!-- User is logged in -->
-                <div class="dropdown">
-                <div class="fas fa-user" id="login-btn"></div>
-                <div class="dropdown-content">
-                    <a href="#">My Account</a>
-                    <a href="#">Orders</a>
-                    <a href="#">Address</a>
-                    <a href="#">Logout</a>
-                </div>
-                </div> 
+                <!-- User is logged in --> 
+                 
+                <div class="fas fa-user" id="login-btn">
+                <ul class="drop-down">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+
 
                 <!--<div class="dropdown">
                     <button class="dropbtn">Welcome, <%= userEmail%></button>
