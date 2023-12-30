@@ -28,21 +28,30 @@
                     to 8.00 p.m)</p>
             </div>
         </div>
-        <div class="wrapper2">
-            <form action="SendOTPServlet" method="post">
-                <div class="reg-sec-1">
-                    <div class="input-box">
-                        <h3>Enter Your Email Address</h3>
-                        <input class="regnumb" type="text" placeholder="Sri Lanka | 07XXXXXXXXX" required>
-                        <div class="tip">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <p class="infoOTP">You will receive an OTP code to the mentioned email address.</p>
-                        </div>
+        div class="wrapper2">
+        <form action="SendOTPServlet" method="post">
+            <div class="reg-sec-1">
+                <div class="input-box">
+                    <h3>Enter Your Email Address</h3>
+                    <input class="regnumb" type="text" placeholder="Email" required>
+                    <div class="tip">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <p class="infoOTP">You will receive an OTP code to the mentioned email address.</p>
                     </div>
-                    <div class="input-box">
-                        <button type="submit" class="reg-vrify-btn">VERIFY Email</button>
-                    </div>
+
                 </div>
+
+
+
+                <div class="input-box">
+                    <h3>Password</h3>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class="fa-regular"></i>
+                    <div class="forg"><a href="#">Forgot Password?</a></div>
+                </div>
+            </div>
+            <button type="submit" class="reg-vrify-btn">VERIFY EMAIL</button>
+        
             </form>
             <hr class="divider">
             <%
