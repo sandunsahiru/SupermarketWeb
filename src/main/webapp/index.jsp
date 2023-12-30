@@ -29,7 +29,7 @@
                 <div class="fas fa-search" id="search-btn"></div>
                 <div class="fas fa-shopping-cart" id="cart-icon"></div>
                 <% if (userEmail != null) {%>
-                <!-- User is logged in -->
+                <!-- User is logged in --> 
                  
                 <div class="fas fa-user" id="login-btn">
                 <ul class="drop-down">
@@ -39,6 +39,7 @@
                     <li><a href="#">Log Out</a></li>
                 </ul>
             </div>
+
 
                 <!--<div class="dropdown">
                     <button class="dropbtn">Welcome, <%= userEmail%></button>
