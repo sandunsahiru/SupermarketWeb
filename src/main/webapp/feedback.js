@@ -1,15 +1,14 @@
-const allStar = document.querySelectorAll('.rating .star')
+const allStars = document.querySelectorAll('.rating .star');
+let ratingInput = document.querySelector('input[name="rating"]');
 
-allStar.forEach((item, idx)=> {
-item.addEventListener('click', function() {
-    allStar.forEach(i=> {
-        i.classList.replace('fa-solid', 'fa-regular')
-    })
-    for(let i=0; i<allStar.length; i++) {
-        if(i <= idx) {
-            allStar[i].classList.replace('fa-regular', 'fa-solid')
-        }
-    }
-})
-})
-
+allStars.forEach((star, idx) => {
+    star.addEventListener('click', function() {
+        allStars.forEach(s => s.classList.remove('fa-solid'));
+        allStars.forEach((s, i) => {
+            if (i <= idx) {
+                s.classList.add('fa-solid');
+            }
+        });
+        ratingInput.value = idx + 1;
+    });
+});

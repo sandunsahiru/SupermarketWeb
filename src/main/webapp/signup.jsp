@@ -14,8 +14,33 @@
         <title>Green Online</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="login.css">
+        <style>
+            .header .logo {
+                font-size: 2.5rem;
+                font-weight: bolder;
+                color: #293326;
+            }
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem 9%;
+                margin-bottom: 5px;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
     </head>
     <body>
+        <header class="header">
+            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i>Greenie</a>
+        </header>
         <div class="wrapper">
             <h1>Create Account</h1>
             <p>Enter the details to create an<br>Account to shop online</p>

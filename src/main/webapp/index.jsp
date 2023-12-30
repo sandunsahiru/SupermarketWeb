@@ -15,10 +15,10 @@
     <body>
         <!-- Header ----------------------------------------------------------------------------->
         <header class="header">
-            <a href="home-page.html" class="logo"><i class="fas fa-shopping-basket"></i> Greenie</a>
+            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i> Greenie</a>
 
             <nav class="navbar">
-                <a href="home-page.html">home</a>
+                <a href="index.jsp">home</a>
                 <a href="#bestsellers">best sellers</a>
                 <a href="AllProduct.jsp">products</a>
                 <a href="#categories">categories</a>
@@ -30,16 +30,16 @@
                 <div class="fas fa-shopping-cart" id="cart-icon"></div>
                 <% if (userEmail != null) {%>
                 <!-- User is logged in --> 
-                 
-                <div class="fas fa-user" id="login-btn">
-                <ul class="drop-down">
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li><a href="#">Address</a></li>
-                    <li><a href="#">Log Out</a></li>
-                </ul>
-            </div>
-
+                <div class="dropdown">
+                    <div class="fas fa-user" id="login-btn">
+                        <ul class="drop-down">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order</a></li>
+                            <li><a href="#">Address</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
 
                 <!--<div class="dropdown">
                     <button class="dropbtn">Welcome, <%= userEmail%></button>
@@ -331,12 +331,12 @@
             <div class="col22">
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="home-page.html">Home</a></li>
-                    <li><a href="home-page.html#bestsellers">Best Sellers</a></li>
-                    <li><a href="products-page.html">Products</a></li>
-                    <li><a href="home-page.html#categories">Categories</a></li>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="index.jsp#bestsellers">Best Sellers</a></li>
+                    <li><a href="AllProduct.jsp">Products</a></li>
+                    <li><a href="feedback.jsp">Feedback</a></li>
                     <li><a href="">Contact Us</a></li>
-                    <li><a href="login-page.html">My Account</a></li>
+                    <li><a href="login.jsp">My Account</a></li>
                 </ul>
             </div>
             <div class="col22">
