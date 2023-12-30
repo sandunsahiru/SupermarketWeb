@@ -47,7 +47,11 @@
         <div class="total-price">Rs.0</div>
       </div>
 
-      <button class="btn-buy">Place Order</button>
+      <form id="orderForm" action="paymentform.jsp" method="post">
+    <input type="hidden" name="orderData" id="orderData">
+    <button type="submit" class="btn-buy">Place Order</button>
+</form>
+
 
       <ion-icon name="close" id="cart-close"></ion-icon>
 

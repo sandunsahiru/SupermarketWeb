@@ -212,5 +212,27 @@ function updateTotal()
 
 
 }
+document.querySelector('.btn-buy').addEventListener('click', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Collect the cart data
+    let cartItems = [];
+    document.querySelectorAll('.cart-box').forEach(item => {
+        let title = item.querySelector('.cart-food-title').innerText;
+        let price = item.querySelector('.cart-price').innerText;
+        let qty = item.querySelector('.cart-quantity').value;
+        let imgSrc = item.querySelector('.cart-img').src;
+
+        cartItems.push({ title, price, qty, imgSrc });
+    });
+
+    // Convert cart data to JSON and assign to the hidden input
+    document.getElementById('orderData').value = JSON.stringify(cartItems);
+
+    // Submit the form
+    document.getElementById('orderForm').submit();
+});
+
 
 

@@ -30,14 +30,6 @@
                 <div class="fas fa-shopping-cart" id="cart-icon"></div>
                 <% if (userEmail != null) {%>
                 <!-- User is logged in -->
-                <a href="login.jsp"></a>
-                <div class="fas fa-user" id="login-btn"></div>
-                <div class="dropdown-content">
-                    <a href="#">My Account</a>
-                    <a href="#">Orders</a>
-                    <a href="#">Address</a>
-                    <a href="#">Logout</a>
-                </div>
                  
 
                 <!--<div class="dropdown">
