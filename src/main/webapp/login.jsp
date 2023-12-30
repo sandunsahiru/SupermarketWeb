@@ -31,11 +31,14 @@
                 padding: 2rem 9%;
                 margin-bottom: 5px;
             }
+            a{
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
         <header class="header">
-            <a href="home-page.html" class="logo"><i class="fas fa-shopping-basket"></i>Greenie</a>
+            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i>Greenie</a>
         </header>
         <div class="wrapper">
             <h1>Login</h1>

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var loginBtn = document.getElementById("login-btn");
 
     loginBtn.addEventListener("click", function () {
-        window.location.href = "login-page.html";
+        window.location.href = "paymentform.jsp";
     });
 });
 
