@@ -31,16 +31,13 @@
                 <% if (userEmail != null) {%>
                 <!-- User is logged in -->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Log
-                    </button>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">My Account</a>
-                        <a class="dropdown-item" href="#">Orders</a>
-                        <a class="dropdown-item" href="#">Addresses</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </div>
+                <div class="fas fa-user" id="login-btn"></div>
+                <div class="dropdown-content">
+                    <a href="#">My Account</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Address</a>
+                    <a href="#">Logout</a>
+                </div>
                 </div>
 
                 <!--<div class="dropdown">
