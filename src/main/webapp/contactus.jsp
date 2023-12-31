@@ -107,6 +107,7 @@
             {
                 width: 100%;
                 padding-top: 70px;
+                margin-top: 20px;
             }
             .contact_info_item
             {
