@@ -2,6 +2,8 @@
     HttpSession existingSession = request.getSession(false); // Get session without creating a new one
     String userEmail = existingSession != null ? (String) existingSession.getAttribute("userEmail") : null;
 %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -190,123 +192,57 @@
 <section class="feedbacks" id="feedbacks">
     <h1 class="cust-fed-head">Customer<span>Feedbacks</span></h1>
     <div class="feed-container">
+        <%
+            Connection con = null;
+            Statement stmt = null;
+            ResultSet rs = null;
+                // Database connection
+                Class.forName("com.mysql.jdbc.Driver");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC", "root", "");
+                stmt = con.createStatement();
+                String sql = "SELECT userName, fuserEmail, userFeedback, rating FROM feedback";
+                rs = stmt.executeQuery(sql);
 
-        <!-- first feed ----------------------------------------------->
+                while (rs.next()) {
+                    String userName = rs.getString("userName");
+                    String fuserEmail = rs.getString("fuserEmail");
+                    String userFeedback = rs.getString("userFeedback");
+                    int rating = rs.getInt("rating");
+        %>
         <div class="f-box">
             <div class="box-top">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="img/profile-img.png">
+                        <img src="img/profile-img.png"> 
                     </div>
                     <div class="name-user">
-                        <strong>Samantha Deshapriya</strong>
-                        <span>samanthadesh@gmail.com</span>
+                        <strong><%= userName%></strong> 
+                        <span><%= fuserEmail%></span>
                     </div>
                 </div>
                 <div class="reviews">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i> <!-- empty star -->
+                    <% for (int i = 1; i <= 5; i++) {%>
+                    <i class="<%= i <= rating ? "fa-solid" : "fa-regular"%> fa-star"></i> <% }%>
+
                 </div>
             </div>
             <div class="feed-comment">
-                <p>Wow its one of marvellous Greenie outlet in kandy city. It provides self service snack counter.
-                    And juice bar. Good service and friendly environment. Plenty of parking available here. It's
-                    close by to many valuable places around dangolla junction. Thank you for your amazing service.
-                </p>
+                <p><%= userFeedback%></p> <!-- User Feedback -->
             </div>
         </div>
-
-        <!-- second feed ----------------------------------------------->
-        <div class="f-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="img/profile-img.png">
-                    </div>
-                    <div class="name-user">
-                        <strong>Senarath Dunusinghe</strong>
-                        <span>senedunu@outlook.com</span>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="feed-comment">
-                <p>A stop for almost all my grocery needs, I love this place because its convenient, clean and
-                    attentive.
-                    I must mention that most of the staff members are very young, but have a wonderful attitude and
-                    are willing to do their job well.
-                </p>
-            </div>
-        </div>
-
-        <!-- third feed ----------------------------------------------->
-        <div class="f-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="img/profile-img.png">
-                    </div>
-                    <div class="name-user">
-                        <strong>Mahipala Hatharasinghe</strong>
-                        <span>mahathr@gmail.com</span>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i> <!-- empty star -->
-                    <i class="fa-regular fa-star"></i> <!-- empty star -->
-                </div>
-            </div>
-            <div class="feed-comment">
-                <p>Greenie Supermarket impresses with its ample parking space, making shopping hassle-free. Greenie
-                    Supermarket not only offers a variety of products but also values convenience and ease for its
-                    shoppers, making it a go-to destination for almost all your shopping requirements.
-                </p>
-            </div>
-        </div>
-
-        <!-- fourth feed ----------------------------------------------->
-        <div class="f-box">
-            <div class="box-top">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="img/profile-img.png">
-                    </div>
-                    <div class="name-user">
-                        <strong>Nihal Kariyawasam</strong>
-                        <span>ni.ka@yahoo.com</span>
-                    </div>
-                </div>
-                <div class="reviews">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i> <!-- empty star -->
-                    <i class="fa-regular fa-star"></i> <!-- empty star -->
-                    <i class="fa-regular fa-star"></i> <!-- empty star -->
-                </div>
-            </div>
-            <div class="feed-comment">
-                <p>Clean and organized but the only problem is the staff working aren?t that pleasant, some are fine
-                    but some make us really disappointed and unhappy.
-                </p>
-            </div>
-        </div>
-
+        <%
+            }
+            if (rs != null) {
+                rs.close();
+            }
+            if (stmt != null) {
+                stmt.close();
+            }
+            if (con != null)
+                con.close();
+        %>
     </div>
 </section>
-
-<!-- Footer ----------------------------------------------------------------------------->
 <footer>
     <section class="footer" id="foot">
         <div class="foot-row">
@@ -335,7 +271,7 @@
                     <li><a href="index.jsp#bestsellers">Best Sellers</a></li>
                     <li><a href="AllProduct.jsp">Products</a></li>
                     <li><a href="feedback.jsp">Feedback</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
                     <li><a href="login.jsp">My Account</a></li>
                 </ul>
             </div>
