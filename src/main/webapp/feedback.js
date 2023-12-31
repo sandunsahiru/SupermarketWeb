@@ -9,6 +9,6 @@ allStars.forEach((star, idx) => {
                 s.classList.add('fa-solid');
             }
         });
-        ratingInput.value = idx + 1;
+                                                                                                                                                                                                 
     });
 });

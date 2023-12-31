@@ -18,7 +18,7 @@
             .header .logo {
                 font-size: 2.5rem;
                 font-weight: bolder;
-                color: #293326;
+                color: #FFFFFF;
             }
             .header {
                 position: fixed;

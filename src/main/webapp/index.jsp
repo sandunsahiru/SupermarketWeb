@@ -271,7 +271,7 @@
                     <li><a href="index.jsp#bestsellers">Best Sellers</a></li>
                     <li><a href="AllProduct.jsp">Products</a></li>
                     <li><a href="feedback.jsp">Feedback</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contactus.jsp">Contact Us</a></li>
                     <li><a href="login.jsp">My Account</a></li>
                 </ul>
             </div>
@@ -292,7 +292,7 @@
         </div>
     </section>
 </footer>
-<script src="js/home.js"></script>
+<script src="home.js"></script>
 </body>
 
 </html>
