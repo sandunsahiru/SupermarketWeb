@@ -10,32 +10,30 @@ public class VerifyOTPServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String sentOtp = (String) session.getAttribute("otp");
         String receivedOtp = request.getParameter("otp");
-        String email = (String) session.getAttribute("email"); // Assuming email is stored in session
-        String password = (String) session.getAttribute("password"); // Assuming password is stored in session
+        String email = (String) session.getAttribute("email"); 
+        String password = (String) session.getAttribute("password");
 
         if (sentOtp != null && sentOtp.equals(receivedOtp)) {
-            // OTP is correct, save the user in the database
+            
             try {
-                // Database connection and save user logic
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC", "root", "");
+               
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/greenie?serverTimezone=UTC", "root", "");
                 PreparedStatement ps = connection.prepareStatement("INSERT INTO users (email, password) VALUES (?, ?)");
                 ps.setString(1, email);
-                ps.setString(2, password); // Consider hashing the password
+                ps.setString(2, password);
                 ps.executeUpdate();
 
-                // Set user email in session for user session
                 session.setAttribute("userEmail", email);
 
-                // Redirect to index page
                 response.sendRedirect("index.jsp");
             } catch (SQLException e) {
                 e.printStackTrace();
-                // Handle database errors
+           
             }
         } else {
-            // OTP is incorrect, redirect back with an error message
+            
             session.setAttribute("otpError", "Incorrect OTP");
-            response.sendRedirect("signup.jsp"); // Replace with your OTP page
+            response.sendRedirect("signup.jsp"); 
         }
     }
 }

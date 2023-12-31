@@ -14,14 +14,14 @@ import java.util.Properties;
 public class EmailUtility {
 
     public static void sendEmail(String to, String subject, String content) throws MessagingException {
-        final String username = "your-email@gmail.com";
-        final String password = "your-password";
+        final String username = "greenie@gmail.com";
+        final String password = "";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
         prop.put("mail.smtp.port", "587");
         prop.put("mail.smtp.auth", "true");
-        prop.put("mail.smtp.starttls.enable", "true"); // TLS
+        prop.put("mail.smtp.starttls.enable", "true");
 
         Session session = Session.getInstance(prop, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -30,7 +30,7 @@ public class EmailUtility {
         });
 
         Message message = new MimeMessage(session);
-        message.setFrom(new InternetAddress("your-email@gmail.com"));
+        message.setFrom(new InternetAddress("greenie@gmail.com"));
         message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
         message.setSubject(subject);
         message.setText(content);
