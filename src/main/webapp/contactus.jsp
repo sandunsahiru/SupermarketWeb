@@ -262,7 +262,7 @@
     width: 30%;
     height: 50px;        
  }
-btn btn-ptimary:hover
+.btnbtn-ptimary:hover
 {
     background: #4d9f41;
 }
