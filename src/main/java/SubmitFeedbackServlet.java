@@ -22,7 +22,7 @@ public class SubmitFeedbackServlet extends HttpServlet {
         try {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/greenie?serverTimezone=UTC", "root", "");
 
             // SQL query to insert data
             String sql = "INSERT INTO feedback (userName, fuserEmail, userFeedback, rating) VALUES (?, ?, ?, ?)";

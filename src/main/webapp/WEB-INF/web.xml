@@ -38,6 +38,14 @@
         <servlet-name>SubmitFeedbackServlet</servlet-name>
         <url-pattern>/SubmitFeedbackServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CancelServlet</servlet-name>
+        <servlet-class>CancelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelServlet</servlet-name>
+        <url-pattern>/CancelServlet</url-pattern>
+    </servlet-mapping>
 
 </web-app>
 

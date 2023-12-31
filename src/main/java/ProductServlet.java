@@ -14,7 +14,7 @@ public class ProductServlet extends HttpServlet {
         // Database connection and fetching products
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/yourDatabase", "username", "password");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/greenie", "root", "");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM products");
 
