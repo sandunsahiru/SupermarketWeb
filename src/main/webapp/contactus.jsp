@@ -145,10 +145,7 @@
 {
     padding-top: 85px;
 }
-.contact_form_container
-{
 
-}
 .contact_form_title
 {
     font-size: 30px;
@@ -252,6 +249,22 @@
     height: 50px;
     background: #fafafa;
     margin-top: 120px;
+}
+.form-control
+{
+     border-radius: 15px;
+}
+.btnbtn-primary
+{
+    background: #222222;
+     color: white;
+    border-radius: 15px;
+    width: 30%;
+    height: 50px;        
+ }
+btn btn-ptimary:hover
+{
+    background: #4d9f41;
 }
 
 
@@ -414,7 +427,7 @@
                 <div class="form-group">
                     <textarea class="form-control" id="contact_form_message" rows="4" placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btnbtn-primary">Send Message</button>
             </form>
         </div>
     </div>
