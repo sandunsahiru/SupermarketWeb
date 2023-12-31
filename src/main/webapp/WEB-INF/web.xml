@@ -15,7 +15,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>SendOTPServlet</servlet-name>
-        <servlet-class>/SendOTPServlet</servlet-class>
+        <servlet-class>SendOTPServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SendOTPServlet</servlet-name>
@@ -24,11 +24,20 @@
 
     <servlet>
         <servlet-name>VerifyOTPServlet</servlet-name>
-        <servlet-class>/VerifyOTPServlet</servlet-class>
+        <servlet-class>VerifyOTPServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>VerifyOTPServlet</servlet-name>
         <url-pattern>/VerifyOTPServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>SubmitFeedbackServlet</servlet-name>
+        <servlet-class>SubmitFeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitFeedbackServlet</servlet-name>
+        <url-pattern>/SubmitFeedbackServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 

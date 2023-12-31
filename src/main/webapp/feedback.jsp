@@ -70,7 +70,7 @@
                 </div>
                 <div class="input-box">
                     <h3>Enter Your Email</h3>
-                    <input type="email" placeholder="Email" name="userEmail" required>
+                    <input type="email" placeholder="Email" name="fuserEmail" required>
                 </div>
             </div>
 
@@ -98,7 +98,7 @@
         </form>
     </div>
 
-    <script src="js/feedback.js"></script>
+    <script src="feedback.js"></script>
 </body>
 
 

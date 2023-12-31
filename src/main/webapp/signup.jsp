@@ -39,7 +39,7 @@
     </head>
     <body>
         <header class="header">
-            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i>Greenie</a>
+            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i> Greenie</a>
         </header>
         <div class="wrapper">
             <h1>Create Account</h1>
