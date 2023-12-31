@@ -23,7 +23,7 @@ public class SendOTPServlet extends HttpServlet {
 
         Session mailSession = Session.getInstance(props, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("your-email@gmail.com", "your-password"); // Replace with your email and password
+                return new PasswordAuthentication("your-email@gmail.com", "your-password");
             }
         });
 
