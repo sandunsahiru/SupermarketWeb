@@ -17,7 +17,7 @@
             .header .logo {
                 font-size: 2.5rem;
                 font-weight: bolder;
-                color: #293326;
+                color: #FFFFFF;
             }
             .header {
                 position: fixed;
@@ -39,7 +39,7 @@
 
 <body>
     <header class="header">
-            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i>Greenie</a>
+            <a href="index.jsp" class="logo"><i class="fas fa-shopping-basket"></i> Greenie</a>
         </header>
     <div class="wrapper">
         <h1>Enjoyed Shopping?</h1>
